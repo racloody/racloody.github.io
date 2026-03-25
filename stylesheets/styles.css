@@ -3,7 +3,7 @@
 
 body {
     font-family: 'Comfortaa', sans-serif;
-    background-color:rgba(0, 0, 0, 0.72); /* Updated background color */
+    background-image: url("../recolored_dark_blur.png");
 }
 
 nav {
