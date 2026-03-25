@@ -14,7 +14,7 @@ nav {
     padding: 15px;
     border-radius: 18px; /* Added border radius */
     margin: 25px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Added shadow */
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2); /* Added shadow */
 }
 
 nav ul {
@@ -134,7 +134,7 @@ nav ul li a .logo,.logo-mobile {
     border-radius: 18px; /* Border radius for boxes */
     color: white; /* Text color */
     margin: 15px; /* Margin between boxes */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Added shadow */
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2); /* Added shadow */
     line-height: 1.5; /* Line height for better readability */
 }
 
