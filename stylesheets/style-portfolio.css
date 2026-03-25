@@ -220,3 +220,207 @@ p {
   background-color: #fd5754;
 }
 
+#popup-bg {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.78);
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
+  z-index: 999;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+#popup-bg.active {
+  display: flex;
+}
+
+#popup-content.popup {
+  position: relative;
+  width: min(95vw, 1100px);
+  height: min(88vh, 900px);
+  max-height: 88vh;
+  padding: 0;
+  border-radius: 20px;
+  background: rgba(25, 25, 25, 0.75);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  box-shadow: 0 24px 50px rgba(0, 0, 0, 0.35);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+#popup-titlebar {
+  width: 100%;
+  height: 48px;
+  padding: 0;
+  border-radius: 20px 20px 0 0;
+  background-color: #212121;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  flex-shrink: 0;
+}
+
+#popup-title-icon {
+  position: absolute;
+  left: 10px;
+  height: 24px;
+  width: auto;
+}
+
+#popup-title {
+  margin: 0;
+  color: #ffffff;
+  font-size: 0.95rem;
+}
+
+#popup-image-wrapper {
+  width: 100%;
+  flex: 1;
+  min-height: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  padding: 10px 14px 14px;
+}
+
+#popup-prev,
+#popup-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 42px;
+  height: 42px;
+  border: 0;
+  border-radius: 999px;
+  background: rgba(0, 0, 0, 0.5);
+  color: #ffffff;
+  font-size: 34px;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 3;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+#popup-prev {
+  left: 18px;
+}
+
+#popup-next {
+  right: 18px;
+}
+
+#popup-prev:hover,
+#popup-next:hover {
+  background: rgba(253, 87, 84, 0.9);
+}
+
+#popup-img {
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 14px;
+  display: block;
+  object-fit: contain;
+}
+
+#popup-close {
+  position: absolute;
+  top: 50%;
+  right: 8px;
+  transform: translateY(-50%);
+  width: 32px;
+  height: 32px;
+  border: 0;
+  border-radius: 999px;
+  background: transparent;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-size: 22px;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+#popup-close ion-icon {
+  display: block;
+}
+
+#popup-close:hover {
+  background: rgba(255, 255, 255, 0.12);
+  color: #fd5754;
+}
+
+@media screen and (max-width: 700px) {
+  #popup-bg {
+    padding: 12px;
+  }
+
+  #popup-content.popup {
+    width: 100%;
+    height: min(82vh, 700px);
+    max-height: 82vh;
+    padding: 0;
+    border-radius: 16px;
+  }
+
+  #popup-titlebar {
+    height: 42px;
+    padding: 0;
+    border-radius: 16px 16px 0 0;
+  }
+
+  #popup-title-icon {
+    left: 8px;
+    height: 20px;
+  }
+
+  #popup-title {
+    font-size: 0.85rem;
+  }
+
+  #popup-img {
+    max-height: 100%;
+    border-radius: 10px;
+  }
+
+  #popup-image-wrapper {
+    padding: 8px 10px 10px;
+  }
+
+  #popup-prev,
+  #popup-next {
+    width: 34px;
+    height: 34px;
+    font-size: 28px;
+  }
+
+  #popup-prev {
+    left: 12px;
+  }
+
+  #popup-next {
+    right: 12px;
+  }
+
+  #popup-close {
+    width: 30px;
+    height: 30px;
+    right: 6px;
+  }
+}
+

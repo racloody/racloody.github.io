@@ -51,14 +51,6 @@
                     <p>mes_logos.html</p>
                 </div>
                 <div class="box-content">
-                    <div id="popup-bg">
-                        <div id="popup-content" class="popup">
-                            <div id="popup-close">
-                                <ion-icon name="close-circle"></ion-icon>
-                            </div>
-                            <img id="popup-img" src="#" alt="" />
-                        </div>
-                    </div>
                     <div>
                         <p>Voici quelques logos que j'ai réalisés pour certains projets personnels ou en équipe :</p>
                     </div>
@@ -120,15 +112,6 @@
                 </div>
 
                 <div class="box-content">
-                    <div id="popup-bg">
-                        <div id="popup-content" class="popup">
-                            <div id="popup-close">
-                                <ion-icon name="close-circle"></ion-icon>
-                                <img id="popup-img" src="#" alt="" />
-                            </div>
-                            
-                        </div>
-                    </div>
                     <div>
                         <p>Voici quelques maquettes que j'ai réalisées pour des projets tels que des sites web ou des
                             applications :</p>
@@ -146,8 +129,6 @@
                         </div>
 
                     </div>
-                    <script src="app.js"></script>
-
 
                 </div>
 
@@ -189,6 +170,24 @@
 
 
     </div>
+
+    <div id="popup-bg" aria-hidden="true">
+        <div id="popup-content" class="popup" role="dialog" aria-modal="true" aria-label="Image agrandie">
+            <div id="popup-titlebar">
+                <img src="images/circles.png" alt="Fenêtre" id="popup-title-icon">
+                <p id="popup-title">image.jpg</p>
+                <button id="popup-close" type="button" aria-label="Fermer le popup">
+                    <ion-icon name="close-circle"></ion-icon>
+                </button>
+            </div>
+            <div id="popup-image-wrapper">
+                <button id="popup-prev" type="button" aria-label="Image précédente">‹</button>
+                <img id="popup-img" src="#" alt="Image en grand format" />
+                <button id="popup-next" type="button" aria-label="Image suivante">›</button>
+            </div>
+        </div>
+    </div>
+
     <footer>
         <p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><a property="dct:title"
                 rel="cc:attributionURL" href="http://racloody.fr">Racloody.fr</a>
