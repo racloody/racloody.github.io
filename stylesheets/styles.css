@@ -22,7 +22,8 @@ nav {
     backdrop-filter: blur(14px);
     border: 1px solid rgba(255, 255, 255, 0.12);
     padding: 15px;
-    border-radius: 18px; /* Added border radius */
+    border-radius: 18px;
+    /* Added border radius */
     margin: 25px;
     box-shadow: 0 20px 50px rgba(0, 0, 0, 0.25);
 }
@@ -59,35 +60,49 @@ nav ul li a {
 
 nav ul.left li a h1 {
     margin: 0;
-    font-size: 24px; /* Adjust the font size as needed */
+    font-size: 24px;
+    /* Adjust the font size as needed */
     color: white;
 }
 
-nav ul li a .logo,.logo-mobile {
+nav ul li a .logo,
+.logo-mobile {
     margin-right: 5px;
-    height: 24px; /* Adjust the height as needed */
-    width: auto; /* Maintain aspect ratio */
-    vertical-align: middle; /* Align the image vertically */
+    height: 24px;
+    /* Adjust the height as needed */
+    width: auto;
+    /* Maintain aspect ratio */
+    vertical-align: middle;
+    /* Align the image vertically */
 }
+
 .nav_elt * {
-    transition: transform 0.3s ease; /* Smooth transition for scaling */
+    transition: transform 0.3s ease;
+    /* Smooth transition for scaling */
 }
 
 .nav_elt :hover {
-   transform: scale(1.1); /* Scale up on hover */
+    transform: scale(1.1);
+    /* Scale up on hover */
 }
+
 .burger-menu {
     display: none;
-       
-    align-items: center; /* Center items vertically */
+
+    align-items: center;
+    /* Center items vertically */
     cursor: pointer;
-    padding: 10px; /* Add padding for better touch area */
-    border-radius: 5px; /* Add border radius for rounded corners */
-    transition: background-color 0.3s; /* Smooth transition for background color */
+    padding: 10px;
+    /* Add padding for better touch area */
+    border-radius: 5px;
+    /* Add border radius for rounded corners */
+    transition: background-color 0.3s;
+    /* Smooth transition for background color */
 }
 
 .burger-menu:hover {
-    background-color: rgba(255, 255, 255, 0.1); /* Change background color on hover */
+    background-color: rgba(255, 255, 255, 0.1);
+    /* Change background color on hover */
 }
 
 .burger-menu .line {
@@ -95,36 +110,46 @@ nav ul li a .logo,.logo-mobile {
     height: 3px;
     background-color: white;
     margin: 4px 0;
-    transition: transform 0.3s, opacity 0.3s; /* Smooth transition for transform and opacity */
+    transition: transform 0.3s, opacity 0.3s;
+    /* Smooth transition for transform and opacity */
 }
 
 .burger-menu.active .line:nth-child(1) {
-    transform: translateY(7px) rotate(45deg); /* Rotate the first line */
+    transform: translateY(7px) rotate(45deg);
+    /* Rotate the first line */
 }
 
 .burger-menu.active .line:nth-child(2) {
-    opacity: 0; /* Hide the second line */
+    opacity: 0;
+    /* Hide the second line */
 }
 
 .burger-menu.active .line:nth-child(3) {
-    transform: translateY(-7px) rotate(-45deg); /* Rotate the third line */
+    transform: translateY(-7px) rotate(-45deg);
+    /* Rotate the third line */
 }
 
 .burger-menu .logo {
-    height: 24px; /* Adjust the height as needed */
-    width: auto; /* Maintain aspect ratio */
-    margin-right: 10px; /* Add some space between the icon and the text */
+    height: 24px;
+    /* Adjust the height as needed */
+    width: auto;
+    /* Maintain aspect ratio */
+    margin-right: 10px;
+    /* Add some space between the icon and the text */
 }
 
 .burger-menu h1 {
-    margin-left: 10px; /* Add some space between the icon and the text */
-    font-size: 24px; /* Adjust the font size as needed */
+    margin-left: 10px;
+    /* Add some space between the icon and the text */
+    font-size: 24px;
+    /* Adjust the font size as needed */
     color: white;
 }
 
 .container {
     display: flex;
-    flex-wrap: wrap; /* Allow wrapping */
+    flex-wrap: wrap;
+    /* Allow wrapping */
     justify-content: space-between;
     align-items: stretch;
     padding: 15px;
@@ -135,50 +160,74 @@ nav ul li a .logo,.logo-mobile {
     display: flex;
     flex-direction: column;
     flex: 1;
-    min-width: 300px; /* Minimum width for columns */
-    margin: 15px; /* Add margin between columns */
+    min-width: 300px;
+    /* Minimum width for columns */
+    margin: 15px;
+    /* Add margin between columns */
 }
 
 .box {
-    background-color: rgba(41, 41, 41, 0.92); /* Slightly transparent box background */
-    border-radius: 18px; /* Border radius for boxes */
-    color: white; /* Text color */
-    margin: 15px; /* Margin between boxes */
-    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2); /* Added shadow */
-    line-height: 1.5; /* Line height for better readability */
+    background-color: rgba(41, 41, 41, 0.92);
+    /* Slightly transparent box background */
+    border-radius: 18px;
+    /* Border radius for boxes */
+    color: white;
+    /* Text color */
+    margin: 15px;
+    /* Margin between boxes */
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2);
+    /* Added shadow */
+    line-height: 1.5;
+    /* Line height for better readability */
 }
 
 .box-header {
     display: flex;
     align-items: center;
-    justify-content: center; /* Center the content horizontally */
-    margin-bottom: 10px; /* Add margin at the bottom */
-    position: relative; /* Position the icon */
-    width: 100%; /* Make the header full width */
-    padding: 10px 0 10px 0; /* Add padding for better spacing */
-    background-color: #212121; /* Ensure the header is visible */
-    border-radius: 18px 18px 0 0; /* Match the box border radius */
-    z-index: 2; /* Ensure the header is above the image */
+    justify-content: center;
+    /* Center the content horizontally */
+    margin-bottom: 10px;
+    /* Add margin at the bottom */
+    position: relative;
+    /* Position the icon */
+    width: 100%;
+    /* Make the header full width */
+    padding: 10px 0 10px 0;
+    /* Add padding for better spacing */
+    background-color: #212121;
+    /* Ensure the header is visible */
+    border-radius: 18px 18px 0 0;
+    /* Match the box border radius */
+    z-index: 2;
+    /* Ensure the header is above the image */
 }
 
 .box-header p {
     margin: 0;
     color: white;
-    text-align: center; /* Center the text */
+    text-align: center;
+    /* Center the text */
 }
 
 .box-icon {
-    margin-right: 10px; /* Space between icon and title */
-    height: 24px; /* Adjust the height as needed */
-    width: auto; /* Maintain aspect ratio */
+    margin-right: 10px;
+    /* Space between icon and title */
+    height: 24px;
+    /* Adjust the height as needed */
+    width: auto;
+    /* Maintain aspect ratio */
     position: absolute;
-    left: 10px; /* Position the icon on the left */
+    left: 10px;
+    /* Position the icon on the left */
 }
 
 .box-content {
-    padding: 15px; /* Add padding for content */
-    align-self: center; /* Center the content vertically */
-    align-items: center; /* Center the content horizontally */
+    padding: 15px;
+    /* Add padding for content */
+    align-self: center;
+    /* Center the content vertically */
+    align-items: center;
+    /* Center the content horizontally */
 }
 
 #home-about-content p {
@@ -188,14 +237,18 @@ nav ul li a .logo,.logo-mobile {
 .software {
     display: flex;
     align-items: center;
-    margin-bottom: 15px; /* Space between software items */
+    margin-bottom: 15px;
+    /* Space between software items */
 }
 
 .software-logo {
-    height: 50px; /* Adjust the height as needed */
-    width: auto; /* Maintain aspect ratio */
-    margin-right: 15px; /* Space between logo and info */
-    
+    height: 50px;
+    /* Adjust the height as needed */
+    width: auto;
+    /* Maintain aspect ratio */
+    margin-right: 15px;
+    /* Space between logo and info */
+
 }
 
 .software-info {
@@ -205,40 +258,52 @@ nav ul li a .logo,.logo-mobile {
 
 .software-info h3 {
     margin: 0;
-    font-size: 18px; /* Adjust the font size as needed */
+    font-size: 18px;
+    /* Adjust the font size as needed */
     color: white;
 }
 
 .software-info p {
     margin: 5px 0 0 0;
-    font-size: 14px; /* Adjust the font size as needed */
+    font-size: 14px;
+    /* Adjust the font size as needed */
     color: white;
 }
 
-.box1, .box3, .box4 {
+.box1 {
+    flex: 0 0 auto;
+}
+
+.box3,
+.box4 {
     flex: 1;
 }
 
 .box2 {
-    flex: 2;
-    /* Remove padding for box2 */
+    flex: 0 0 auto;
+    display: flex;
+    flex-direction: column;
 }
 
 .box2 .box-content {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 10px 14px 14px;
+    padding: 8px 14px;
 }
 
 .box-image {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 80%; /* Ensure the image fills the box */
-    padding: 2%; /* Maintain a 1:1 aspect ratio */
-    max-width: 100%; /* Ensure the image does not exceed the box width */
-    height: auto; /* Maintain aspect ratio */
+    width: 80%;
+    /* Ensure the image fills the box */
+    padding: 2%;
+    /* Maintain a 1:1 aspect ratio */
+    max-width: 100%;
+    /* Ensure the image does not exceed the box width */
+    height: auto;
+    /* Maintain aspect ratio */
 }
 
 .box2 .box-image {
@@ -246,24 +311,33 @@ nav ul li a .logo,.logo-mobile {
     margin-left: auto;
     margin-right: auto;
     width: 100%;
-    max-width: 65%; /* Reduced to minimize space under text */
+    max-width: 65%;
+    /* Reduced to minimize space under text */
     padding: 0;
-    height: auto; /* Maintain aspect ratio */
-    filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.2)); /* Added shadow */
-    border-radius: 18px; /* Added border radius */
+    height: auto;
+    /* Maintain aspect ratio */
+    filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.2));
+    /* Added shadow */
+    border-radius: 18px;
+    /* Added border radius */
 }
 
 .box-carousel {
     position: relative;
     overflow: hidden;
     display: flex;
-    flex-direction: column; /* Ensure the header is above the carousel */
+    flex-direction: column;
+    /* Ensure the header is above the carousel */
     justify-content: center;
     align-items: center;
-    width: 50%; /* Set the width to half */
-    padding-top: 50%; /* Maintain a 1:1 aspect ratio */
-    height: 0; /* Ensure the height is controlled by padding-top */
-    margin: 0 auto; /* Center the carousel */
+    width: 50%;
+    /* Set the width to half */
+    padding-top: 50%;
+    /* Maintain a 1:1 aspect ratio */
+    height: 0;
+    /* Ensure the height is controlled by padding-top */
+    margin: 0 auto;
+    /* Center the carousel */
 }
 
 .carousel {
@@ -272,7 +346,8 @@ nav ul li a .logo,.logo-mobile {
     align-items: center;
     width: 50%;
     height: 100%;
-    overflow: hidden; /* Ensure inactive images are invisible */
+    overflow: hidden;
+    /* Ensure inactive images are invisible */
 }
 
 .carousel-images {
@@ -282,11 +357,16 @@ nav ul li a .logo,.logo-mobile {
 
 .carousel-image {
     position: relative;
-    min-width: 100%; /* Ensure the images fit within the box */
-    max-height: 100%; /* Ensure the images fill the frame */
-    object-fit: contain; /* Ensure the images adapt to the frame */
-    max-width: 100%; /* Ensure the images fit within the box */
-    aspect-ratio: 1 / 1; /* Maintain a 1:1 aspect ratio */
+    min-width: 100%;
+    /* Ensure the images fit within the box */
+    max-height: 100%;
+    /* Ensure the images fill the frame */
+    object-fit: contain;
+    /* Ensure the images adapt to the frame */
+    max-width: 100%;
+    /* Ensure the images fit within the box */
+    aspect-ratio: 1 / 1;
+    /* Maintain a 1:1 aspect ratio */
 }
 
 .carousel-button {
@@ -347,37 +427,58 @@ footer a:hover {
 }
 
 .box-new {
-    background-color: rgba(82, 77, 97, 0.92); /* Slightly transparent box background */
-    border-radius: 18px; /* Border radius for boxes */
-    color: white; /* Text color */
-    margin: 15px; /* Margin between boxes */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Added shadow */
-    line-height: 1.5; /* Line height for better readability */
+    background-color: rgba(82, 77, 97, 0.92);
+    /* Slightly transparent box background */
+    border-radius: 18px;
+    /* Border radius for boxes */
+    color: white;
+    /* Text color */
+    margin: 15px;
+    /* Margin between boxes */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* Added shadow */
+    line-height: 1.5;
+    /* Line height for better readability */
 }
 
 .box-new .box-header {
     display: flex;
     align-items: center;
-    justify-content: center; /* Center the content horizontally */
-    margin-bottom: 10px; /* Add margin at the bottom */
-    position: relative; /* Position the icon */
-    width: 100%; /* Make the header full width */
-    padding: 10px 0 10px 0; /* Add padding for better spacing */
-    background-color: #212121; /* Keep title bar opaque */
-    border-radius: 18px 18px 0 0; /* Match the box border radius */
-    z-index: 2; /* Ensure the header is above the image */
+    justify-content: center;
+    /* Center the content horizontally */
+    margin-bottom: 10px;
+    /* Add margin at the bottom */
+    position: relative;
+    /* Position the icon */
+    width: 100%;
+    /* Make the header full width */
+    padding: 10px 0 10px 0;
+    /* Add padding for better spacing */
+    background-color: #212121;
+    /* Keep title bar opaque */
+    border-radius: 18px 18px 0 0;
+    /* Match the box border radius */
+    z-index: 2;
+    /* Ensure the header is above the image */
 }
 
 .box-new .box-content {
-    padding: 15px; /* Add padding for content */
-    align-self: center; /* Center the content vertically */
-    align-items: center; /* Center the content horizontally */
+    padding: 15px;
+    /* Add padding for content */
+    align-self: center;
+    /* Center the content vertically */
+    align-items: center;
+    /* Center the content horizontally */
 }
 
-.box-carousel, .box-new {
-    width: 50%; /* Set the width to half */
-    display: inline-block; /* Display boxes side by side */
-    vertical-align: top; /* Align the boxes at the top */
+.box-carousel,
+.box-new {
+    width: 50%;
+    /* Set the width to half */
+    display: inline-block;
+    /* Display boxes side by side */
+    vertical-align: top;
+    /* Align the boxes at the top */
 }
 
 .social-media {
@@ -548,6 +649,7 @@ footer a:hover {
 }
 
 @media (max-width: 768px) {
+
     html,
     body {
         overflow-x: hidden;
@@ -596,7 +698,8 @@ footer a:hover {
         width: 100%;
     }
 
-    nav ul.left, nav ul.right {
+    nav ul.left,
+    nav ul.right {
         flex: none;
         width: 100%;
     }
@@ -615,8 +718,10 @@ footer a:hover {
     }
 
     .logo {
-        display: none; /* Hide the logo in mobile view */
+        display: none;
+        /* Hide the logo in mobile view */
     }
+
     nav ul {
         display: flex;
         max-height: 0px;
@@ -633,7 +738,8 @@ footer a:hover {
 
     .container {
         flex-direction: column;
-        align-items: center; /* Center the boxes horizontally */
+        align-items: center;
+        /* Center the boxes horizontally */
         margin: 0px;
     }
 
@@ -646,58 +752,74 @@ footer a:hover {
     .box,
     .box-new {
         margin: 10px auto;
-        line-height: 1.3; /* Adjust line height for better readability */
-        width: calc(100% - 20px); /* Match nav/footer mobile width */
+        line-height: 1.3;
+        /* Adjust line height for better readability */
+        width: calc(100% - 20px);
+        /* Match nav/footer mobile width */
         box-sizing: border-box;
     }
 
     .box2 {
-        order: -2; /* Move box2 to the top */
+        order: -2;
+        /* Move box2 to the top */
     }
 
     .box1 {
-        order: -1; /* Move box1 after box2 */
+        order: -1;
+        /* Move box1 after box2 */
     }
 
     .box3 {
-        order: 0; /* Move box3 after box1 */
+        order: 0;
+        /* Move box3 after box1 */
     }
 
     .box4 {
-        order: 1; /* Move box4 after box3 */
+        order: 1;
+        /* Move box4 after box3 */
     }
 
     .box5 {
-        order: 2; /* Move box5 to the bottom */
+        order: 2;
+        /* Move box5 to the bottom */
     }
 
     .box2 .box-image {
         height: auto;
         width: 100%;
-        max-width: calc(100% - 28px); /* Keep a bit more side gaps on mobile */
+        max-width: calc(100% - 28px);
+        /* Keep a bit more side gaps on mobile */
     }
 
     .box-carousel {
-        max-height: 300px; /* Adjust the maximum height for mobile */
-        height: auto; /* Adjust the height to fit the image */
+        max-height: 300px;
+        /* Adjust the maximum height for mobile */
+        height: auto;
+        /* Adjust the height to fit the image */
     }
 
     .carousel-image {
-        max-height: 300px; /* Adjust the maximum height for mobile */
+        max-height: 300px;
+        /* Adjust the maximum height for mobile */
     }
 
     .box-header {
-        justify-content: center; /* Center the content horizontally */
+        justify-content: center;
+        /* Center the content horizontally */
     }
 
     .box-header p {
-        margin-left: 0; /* Remove left margin */
-        font-size: 18px; /* Adjust font size */
+        margin-left: 0;
+        /* Remove left margin */
+        font-size: 18px;
+        /* Adjust font size */
     }
 
     .box-icon {
-        height: 18px; /* Adjust the height */
-        width: auto; /* Maintain aspect ratio */
+        height: 18px;
+        /* Adjust the height */
+        width: auto;
+        /* Maintain aspect ratio */
     }
 }
 
@@ -721,7 +843,8 @@ footer a:hover {
 
     .container {
         flex-direction: column;
-        align-items: last baseline; /* Center the boxes horizontally */
+        align-items: last baseline;
+        /* Center the boxes horizontally */
         margin: 0px;
         padding: 0px !important;
     }
@@ -735,62 +858,77 @@ footer a:hover {
     .box,
     .box-new {
         margin: 10px auto;
-        width: calc(100% - 20px); /* Match nav/footer mobile width */
+        width: calc(100% - 20px);
+        /* Match nav/footer mobile width */
         box-sizing: border-box;
     }
 
     .box2 {
-        order: -2; /* Move box2 to the top */
+        order: -2;
+        /* Move box2 to the top */
     }
 
     .box1 {
-        order: -1; /* Move box1 after box2 */
+        order: -1;
+        /* Move box1 after box2 */
     }
 
     .box3 {
-        order: 0; /* Move box3 after box1 */
+        order: 0;
+        /* Move box3 after box1 */
     }
 
     .box4 {
-        order: 1; /* Move box4 after box3 */
+        order: 1;
+        /* Move box4 after box3 */
     }
 
     .box5 {
-        order: 2; /* Move box5 to the bottom */
+        order: 2;
+        /* Move box5 to the bottom */
     }
 
     .box2 .box-image {
         height: auto;
         width: 100%;
-        max-width: calc(100% - 24px); /* Keep a bit more side gaps on small screens */
+        max-width: calc(100% - 24px);
+        /* Keep a bit more side gaps on small screens */
     }
 
     .box-carousel {
-        max-height: 200px; /* Adjust the maximum height for smaller screens */
-        height: auto; /* Adjust the height to fit the image */
+        max-height: 200px;
+        /* Adjust the maximum height for smaller screens */
+        height: auto;
+        /* Adjust the height to fit the image */
     }
 
     .carousel-image {
-        max-height: 200px; /* Adjust the maximum height for smaller screens */
+        max-height: 200px;
+        /* Adjust the maximum height for smaller screens */
     }
 
     .box-header {
-        justify-content: center; /* Center the content horizontally */
+        justify-content: center;
+        /* Center the content horizontally */
     }
 
     .box-header p {
-        margin-left: 0; /* Remove left margin */
-        font-size: 16px; /* Adjust font size */
+        margin-left: 0;
+        /* Remove left margin */
+        font-size: 16px;
+        /* Adjust font size */
     }
 
     .box-icon {
-        height: 16px; /* Adjust the height */
-        width: auto; /* Maintain aspect ratio */
+        height: 16px;
+        /* Adjust the height */
+        width: auto;
+        /* Maintain aspect ratio */
     }
 
     .vertical-separator {
         display: none;
-    } 
+    }
 
     .social-media {
         display: block;
