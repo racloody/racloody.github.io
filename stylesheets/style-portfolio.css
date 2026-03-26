@@ -1,13 +1,28 @@
 @media screen and (max-width: 700px) {
-  html, body {
+
+  html,
+  body {
     overflow-x: hidden;
   }
 
-  #nature-1, #nature-2, #nature-3, #nature-4, #nature-5, #nature-6, #nature-7, #nature-8, #nature-9, #nature-10, #nature-11, #nature-12, #nature-13 {
-    
+  #nature-1,
+  #nature-2,
+  #nature-3,
+  #nature-4,
+  #nature-5,
+  #nature-6,
+  #nature-7,
+  #nature-8,
+  #nature-9,
+  #nature-10,
+  #nature-11,
+  #nature-12,
+  #nature-13 {
+
     grid-column: span 1;
     grid-row: span 1;
   }
+
   .grid-maquettes {
     overflow-x: hidden;
     overflow-y: visible;
@@ -27,14 +42,19 @@
     padding-right: 0;
     padding-bottom: 0;
   }
-  .grid-item{
-    width: 100%; /* L'image occupe 100% de la largeur de la boîte */
-    height: auto; /* Maintient le ratio de l'image */
-    max-width: 100%; /* Empêche l'image de dépasser la largeur de son conteneur */
+
+  .grid-item {
+    width: 100%;
+    /* L'image occupe 100% de la largeur de la boîte */
+    height: auto;
+    /* Maintient le ratio de l'image */
+    max-width: 100%;
+    /* Empêche l'image de dépasser la largeur de son conteneur */
   }
 
   #popup-content {
-    max-width: 90%; /* Réduit la taille maximale de la boîte pour les petits écrans */
+    max-width: 90%;
+    /* Réduit la taille maximale de la boîte pour les petits écrans */
     height: auto;
     display: flex;
     justify-content: center;
@@ -43,17 +63,22 @@
   }
 
   #popup-img {
-    width: 100%; /* L'image occupe 100% de la largeur de la boîte */
-    height: auto; /* Maintient le ratio de l'image */
-    max-width: 100%; /* Empêche l'image de dépasser la largeur de son conteneur */
+    width: 100%;
+    /* L'image occupe 100% de la largeur de la boîte */
+    height: auto;
+    /* Maintient le ratio de l'image */
+    max-width: 100%;
+    /* Empêche l'image de dépasser la largeur de son conteneur */
     border-radius: 10px;
     display: block;
   }
 
   #popup-close {
     position: absolute;
-    top: 10px; /* Positionne le bouton en haut */
-    right: 10px; /* Ajuste la position du bouton pour les petits écrans */
+    top: 10px;
+    /* Positionne le bouton en haut */
+    right: 10px;
+    /* Ajuste la position du bouton pour les petits écrans */
     height: 40px;
     width: 40px;
     border-radius: 50%;
@@ -107,6 +132,7 @@ p {
   cursor: pointer;
   transition: all 0.2s ease;
 }
+
 .popup {
   position: fixed;
   top: 0;
@@ -115,8 +141,9 @@ p {
   height: 50%;
 
 }
+
 @media screen and (min-width: 700px) {
-  
+
 
   #nature-1,
   #nature-3 {
@@ -125,8 +152,7 @@ p {
   }
 
   #nature-2,
-  #nature-10
-  {
+  #nature-10 {
     grid-column: span 2;
   }
 
@@ -144,22 +170,25 @@ p {
     grid-column: span 2;
     grid-row: span 1;
   }
-  
+
   #popup-content {
-    max-width: 100%; 
+    max-width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative; /* Permet au bouton de fermeture d'être positionné par rapport à ce conteneur */
+    position: relative;
+    /* Permet au bouton de fermeture d'être positionné par rapport à ce conteneur */
     margin: 0;
     padding: 0;
   }
-  
+
   #popup-img {
-    max-width: 100%; /* Définit la largeur de l'image à 75% */
+    max-width: 100%;
+    /* Définit la largeur de l'image à 75% */
     height: auto;
     border-radius: 10px;
-    display: block; /* Assure que l'image ne prend pas plus de place que nécessaire */
+    display: block;
+    /* Assure que l'image ne prend pas plus de place que nécessaire */
   }
 }
 
@@ -202,26 +231,32 @@ p {
 }
 
 #popup-content {
-  max-width: 75%; /* Ajuste la largeur maximale à 75% */
+  max-width: 75%;
+  /* Ajuste la largeur maximale à 75% */
   display: flex;
   justify-content: center;
   align-items: center;
-  position: relative; /* Permet au bouton de fermeture d'être positionné par rapport à ce conteneur */
+  position: relative;
+  /* Permet au bouton de fermeture d'être positionné par rapport à ce conteneur */
   margin: 0;
   padding: 0;
 }
 
 #popup-img {
-  width: 75%; /* Définit la largeur de l'image à 75% */
+  width: 75%;
+  /* Définit la largeur de l'image à 75% */
   height: auto;
   border-radius: 10px;
-  display: block; /* Assure que l'image ne prend pas plus de place que nécessaire */
+  display: block;
+  /* Assure que l'image ne prend pas plus de place que nécessaire */
 }
 
 #popup-close {
   position: absolute;
-  top: 10px; /* Positionne le bouton en haut */
-  right: 80px; /* Ajuste la position à droite pour corriger le décalage */
+  top: 10px;
+  /* Positionne le bouton en haut */
+  right: 80px;
+  /* Ajuste la position à droite pour corriger le décalage */
   height: 40px;
   width: 40px;
   border-radius: 50%;
@@ -232,7 +267,8 @@ p {
   font-size: 40px;
   cursor: pointer;
   transition: background-color 0.2s ease;
-  z-index: 2; /* Assure que le bouton est au-dessus de l'image */
+  z-index: 2;
+  /* Assure que le bouton est au-dessus de l'image */
 }
 
 #popup-close:hover {
@@ -263,9 +299,11 @@ p {
   max-height: 88vh;
   padding: 0;
   border-radius: 20px;
-  background: rgba(25, 25, 25, 0.75);
-  border: 1px solid rgba(255, 255, 255, 0.14);
+  background: rgba(20, 20, 20, 0.46);
+  border: 1px solid rgba(255, 255, 255, 0.2);
   box-shadow: 0 24px 50px rgba(0, 0, 0, 0.35);
+  -webkit-backdrop-filter: blur(18px) saturate(125%);
+  backdrop-filter: blur(18px) saturate(125%);
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -279,7 +317,8 @@ p {
   height: 48px;
   padding: 0;
   border-radius: 18px 18px 0 0;
-  background-color: #212121;
+  background: rgba(10, 10, 10, 0.34);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -319,9 +358,11 @@ p {
   transform: translateY(-50%);
   width: 42px;
   height: 42px;
-  border: 0;
+  border: 1px solid rgba(255, 255, 255, 0.22);
   border-radius: 999px;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(255, 255, 255, 0.08);
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
   color: #ffffff;
   font-size: 34px;
   line-height: 1;
@@ -343,7 +384,7 @@ p {
 
 #popup-prev:hover,
 #popup-next:hover {
-  background: rgba(253, 87, 84, 0.9);
+  background: rgba(255, 255, 255, 0.2);
 }
 
 #popup-img {
@@ -363,9 +404,11 @@ p {
   transform: translateY(-50%);
   width: 32px;
   height: 32px;
-  border: 0;
+  border: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: 999px;
-  background: transparent;
+  background: rgba(255, 255, 255, 0.08);
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
   color: #fff;
   display: flex;
   justify-content: center;
@@ -380,11 +423,12 @@ p {
 }
 
 #popup-close:hover {
-  background: rgba(255, 255, 255, 0.12);
-  color: #fd5754;
+  background: rgba(255, 255, 255, 0.2);
+  color: #ffffff;
 }
 
 @media screen and (max-width: 700px) {
+
   .portfolio-grid.grid-maquettes,
   .portfolio-grid.grid-logos {
     width: 100%;
@@ -477,4 +521,3 @@ p {
     padding-bottom: 0;
   }
 }
-
