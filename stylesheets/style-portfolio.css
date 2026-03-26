@@ -8,13 +8,22 @@
     grid-column: span 1;
     grid-row: span 1;
   }
-  .portfolio-grid{
+  .grid-maquettes {
     overflow-x: hidden;
     overflow-y: visible;
     width: 100%;
     grid-template-columns: 1fr;
     height: auto;
     max-height: none;
+    padding-right: 0;
+    padding-bottom: 0;
+  }
+
+  .grid-logos {
+    width: 100%;
+    grid-template-columns: 1fr;
+    height: auto;
+    overflow-y: visible;
     padding-right: 0;
     padding-bottom: 0;
   }
@@ -56,13 +65,6 @@
     cursor: pointer;
     z-index: 2;
   }
-}
-
-/* Match navbar and footer width with home page */
-nav,
-footer {
-  max-width: calc(100vw - 50px);
-  margin: 25px auto;
 }
 
 p {
@@ -383,9 +385,22 @@ p {
 }
 
 @media screen and (max-width: 700px) {
-  .portfolio-grid {
+  .portfolio-grid.grid-maquettes,
+  .portfolio-grid.grid-logos {
+    width: 100%;
+    grid-template-columns: minmax(0, 1fr);
+    padding-right: 0;
+  }
+
+  .grid-maquettes {
     height: auto;
     max-height: none;
+    overflow-y: visible;
+    padding-bottom: 0;
+  }
+
+  .grid-logos {
+    height: auto;
     overflow-y: visible;
     padding-bottom: 0;
   }
@@ -449,17 +464,17 @@ p {
   }
 }
 
-  /* Logos grid keeps scrolling behavior */
+@media screen and (min-width: 701px) {
   .grid-logos {
     height: 75vh;
     overflow-y: scroll;
     padding-bottom: 70px;
   }
 
-  /* Maquettes grid auto height */
   .grid-maquettes {
     height: auto;
     overflow-y: visible;
     padding-bottom: 0;
   }
+}
 
