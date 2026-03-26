@@ -28,7 +28,6 @@
         <ul class="right">
             <li class="nav_elt"><a href="https://cloud.racloody.fr" target="_blank">Cloud</a></li>
             <li class="nav_elt"><a href="https://github.com/racloody" target="_blank">Github</a></li>
-            <li class="nav_elt"><a href="https://bento.me/racloody" target="_blank">Bento</a></li>
         </ul>
     </nav>
     <div class="container">
@@ -38,7 +37,7 @@
                     <img src="images/circles.png" alt="Circles" class="box-icon">
                     <p>qui_suis_je.html</p>
                 </div>
-                <div class="box-content">
+                <div class="box-content" id="home-about-content">
                     <p>
                         <font color="#abafae">&lt;/</font>
                         <font color="#ff5258">p</font>
@@ -57,7 +56,7 @@
                     <img src="images/circles.png" alt="Circles" class="box-icon">
                     <p>mon_parcours.md</p>
                 </div>
-                <div class="box-content">
+                <div class="box-content" id="home-parcours-content">
                     J'ai étudié au <b>collège de Gimont</b>, où j'ai découvert <b>les métiers de la création et de
                         la diffusion artistique</b> grâce à deux stages : un stage d'une semaine<b> avec un ingénieur du
                         son</b> et un autre <b>dans une station de radio</b>. Au
@@ -117,7 +116,7 @@
                     <p>elouan.png</p>
                 </div>
                 <div class="box-content">
-                    <img src="images/index_images/moi.jpg" alt="Elouan" class="box-image">
+                    <img src="images/index_images/moi.jpg" alt="Elouan" class="box-image" id="home-photo-trigger">
                 </div>
             </div>
             <div class="box box5">
@@ -150,6 +149,18 @@
                         </div>
                     </div>
                 </div>
+            </div>
+        </div>
+    </div>
+    <div id="home-photo-popup-bg" aria-hidden="true">
+        <div id="home-photo-popup" role="dialog" aria-modal="true" aria-label="Photo de Elouan en grand format">
+            <div id="home-photo-popup-titlebar">
+                <img src="images/circles.png" alt="Fenêtre" id="home-photo-popup-title-icon">
+                <p id="home-photo-popup-title">elouan.png</p>
+                <button id="home-photo-popup-close" type="button" aria-label="Fermer l'aperçu">×</button>
+            </div>
+            <div id="home-photo-popup-image-wrapper">
+                <img id="home-photo-popup-img" src="images/index_images/moi.jpg" alt="Elouan en grand format">
             </div>
         </div>
     </div>
