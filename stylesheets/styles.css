@@ -515,6 +515,15 @@ footer a:hover {
     margin: 10px 0;
 }
 
+.social-media-item a {
+    color: white;
+    text-decoration: none;
+}
+
+.social-media-item a:hover {
+    text-decoration: underline;
+}
+
 .social-media-icon {
     height: 24px;
     width: 24px;
@@ -548,9 +557,11 @@ footer a:hover {
     max-height: 90vh;
     padding: 0;
     border-radius: 18px;
-    background: rgba(25, 25, 25, 0.8);
-    border: 1px solid rgba(255, 255, 255, 0.14);
+    background: rgba(20, 20, 20, 0.46);
+    border: 1px solid rgba(255, 255, 255, 0.2);
     box-shadow: 0 24px 50px rgba(0, 0, 0, 0.35);
+    -webkit-backdrop-filter: blur(18px) saturate(125%);
+    backdrop-filter: blur(18px) saturate(125%);
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -561,7 +572,8 @@ footer a:hover {
 #home-photo-popup-titlebar {
     width: 100%;
     height: 48px;
-    background-color: #212121;
+    background: rgba(10, 10, 10, 0.34);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.12);
     border-radius: 18px 18px 0 0;
     display: flex;
     align-items: center;
@@ -606,9 +618,11 @@ footer a:hover {
     transform: translateY(-50%);
     width: 34px;
     height: 34px;
-    border: 0;
+    border: 1px solid rgba(255, 255, 255, 0.2);
     border-radius: 999px;
-    background: rgba(0, 0, 0, 0.55);
+    background: rgba(255, 255, 255, 0.08);
+    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(8px);
     color: #fff;
     cursor: pointer;
     font-size: 24px;
@@ -616,7 +630,7 @@ footer a:hover {
 }
 
 #home-photo-popup-close:hover {
-    background: rgba(255, 255, 255, 0.14);
+    background: rgba(255, 255, 255, 0.2);
 }
 
 @media (max-width: 768px) {
