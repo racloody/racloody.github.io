@@ -2,16 +2,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&display=swap');
 
 :root {
-    --glass-box-bg: rgba(24, 24, 24, 0.46);
-    --glass-box-header: rgba(14, 14, 14, 0.4);
+    --glass-box-bg: rgba(24, 24, 24, 0.34);
+    --glass-box-header: rgba(14, 14, 14, 0.3);
     --glass-border: rgba(255, 255, 255, 0.18);
+    --liquid-surface: rgba(24, 24, 24, 0.34);
+    --liquid-header: rgba(14, 14, 14, 0.3);
 }
 
 body {
     font-family: 'Comfortaa', sans-serif;
-    background-image:
-        linear-gradient(rgba(0, 0, 0, 0.18), rgba(0, 0, 0, 0.22)),
-        url("../recolored_dark_blur.png");
+    background-image: url("../background.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -23,15 +23,15 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: rgba(33, 33, 33, 0.45);
-    -webkit-backdrop-filter: blur(14px);
-    backdrop-filter: blur(14px);
+    background: rgba(33, 33, 33, 0.34);
+    -webkit-backdrop-filter: blur(20px) saturate(130%);
+    backdrop-filter: blur(20px) saturate(130%);
     border: 1px solid rgba(255, 255, 255, 0.12);
     padding: 15px;
     border-radius: 18px;
     /* Added border radius */
     margin: 25px;
-    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.16);
 }
 
 nav ul {
@@ -173,20 +173,20 @@ nav ul li a .logo,
 }
 
 .box {
-    background: var(--glass-box-bg);
+    background: var(--liquid-surface);
     border-radius: 18px;
     /* Border radius for boxes */
     color: white;
     /* Text color */
     margin: 15px;
     /* Margin between boxes */
-    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 22px 46px rgba(0, 0, 0, 0.26);
     /* Added shadow */
     line-height: 1.5;
     /* Line height for better readability */
     border: 1px solid var(--glass-border);
-    -webkit-backdrop-filter: blur(16px) saturate(120%);
-    backdrop-filter: blur(16px) saturate(120%);
+    -webkit-backdrop-filter: blur(20px) saturate(130%);
+    backdrop-filter: blur(20px) saturate(130%);
 }
 
 .box-header {
@@ -202,7 +202,7 @@ nav ul li a .logo,
     /* Make the header full width */
     padding: 10px 0 10px 0;
     /* Add padding for better spacing */
-    background: var(--glass-box-header);
+    background: rgba(14, 14, 14, 0.3);
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 18px 18px 0 0;
     /* Match the box border radius */
@@ -404,16 +404,16 @@ nav ul li a .logo,
 }
 
 footer {
-    background: rgba(33, 33, 33, 0.45);
-    -webkit-backdrop-filter: blur(14px);
-    backdrop-filter: blur(14px);
+    background: rgba(33, 33, 33, 0.34);
+    -webkit-backdrop-filter: blur(20px) saturate(130%);
+    backdrop-filter: blur(20px) saturate(130%);
     border: 1px solid rgba(255, 255, 255, 0.12);
     color: white;
     text-align: center;
     padding: 5px;
     border-radius: 18px;
     margin: 25px;
-    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.22);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.14);
 }
 
 footer a {
@@ -435,7 +435,7 @@ footer a:hover {
 }
 
 .box-new {
-    background: var(--glass-box-bg);
+    background: var(--liquid-surface);
     border-radius: 18px;
     /* Border radius for boxes */
     color: white;
@@ -447,8 +447,8 @@ footer a:hover {
     line-height: 1.5;
     /* Line height for better readability */
     border: 1px solid var(--glass-border);
-    -webkit-backdrop-filter: blur(16px) saturate(120%);
-    backdrop-filter: blur(16px) saturate(120%);
+    -webkit-backdrop-filter: blur(20px) saturate(130%);
+    backdrop-filter: blur(20px) saturate(130%);
 }
 
 .box-new .box-header {
@@ -464,7 +464,7 @@ footer a:hover {
     /* Make the header full width */
     padding: 10px 0 10px 0;
     /* Add padding for better spacing */
-    background: var(--glass-box-header);
+    background: rgba(14, 14, 14, 0.3);
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 18px 18px 0 0;
     /* Match the box border radius */
@@ -557,11 +557,11 @@ footer a:hover {
     max-height: 90vh;
     padding: 0;
     border-radius: 18px;
-    background: rgba(20, 20, 20, 0.46);
+    background: var(--liquid-surface);
     border: 1px solid rgba(255, 255, 255, 0.2);
     box-shadow: 0 24px 50px rgba(0, 0, 0, 0.35);
-    -webkit-backdrop-filter: blur(18px) saturate(125%);
-    backdrop-filter: blur(18px) saturate(125%);
+    -webkit-backdrop-filter: blur(22px) saturate(135%);
+    backdrop-filter: blur(22px) saturate(135%);
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -572,7 +572,7 @@ footer a:hover {
 #home-photo-popup-titlebar {
     width: 100%;
     height: 48px;
-    background: rgba(10, 10, 10, 0.34);
+    background: rgba(10, 10, 10, 0.26);
     border-bottom: 1px solid rgba(255, 255, 255, 0.12);
     border-radius: 18px 18px 0 0;
     display: flex;
@@ -693,9 +693,9 @@ footer a:hover {
 
     nav,
     footer {
-        background: rgba(33, 33, 33, 0.45);
-        -webkit-backdrop-filter: blur(14px);
-        backdrop-filter: blur(14px);
+        background: rgba(33, 33, 33, 0.34);
+        -webkit-backdrop-filter: blur(20px) saturate(130%);
+        backdrop-filter: blur(20px) saturate(130%);
         border: 1px solid rgba(255, 255, 255, 0.12);
         width: calc(100% - 20px);
         margin: 10px auto;
@@ -706,12 +706,12 @@ footer a:hover {
 
     .box,
     .box-new {
-        background: rgba(24, 24, 24, 0.4);
+        background: var(--liquid-surface);
     }
 
     .box-header,
     .box-new .box-header {
-        background: rgba(14, 14, 14, 0.24);
+        background: rgba(14, 14, 14, 0.2);
     }
 
     nav ul {
