@@ -4,19 +4,20 @@
 :root {
     --glass-box-bg: rgba(24, 24, 24, 0.34);
     --glass-box-header: rgba(14, 14, 14, 0.3);
-    --glass-border: rgba(255, 255, 255, 0.18);
-    --liquid-surface: rgba(24, 24, 24, 0.34);
+    --glass-border: rgb(78, 71, 169);
+    --liquid-surface: rgba(32, 31, 40, 0.589);
     --liquid-header: rgba(14, 14, 14, 0.3);
 }
 
 body {
     font-family: 'Comfortaa', sans-serif;
-    background-image: url("../background.png");
+    background-image: url('../backgrounddd.png');
+
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
     background-attachment: fixed;
-    background-color: #141414;
+
 }
 
 nav {
@@ -26,12 +27,12 @@ nav {
     background: rgba(33, 33, 33, 0.34);
     -webkit-backdrop-filter: blur(20px) saturate(130%);
     backdrop-filter: blur(20px) saturate(130%);
-    border: 1px solid rgba(255, 255, 255, 0.12);
+    border: 1px solid var(--glass-border);
     padding: 15px;
     border-radius: 18px;
     /* Added border radius */
     margin: 25px;
-    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.16);
+    box-shadow: 5px 5px 5px rgba(44, 40, 57, 0.136);
 }
 
 nav ul {
