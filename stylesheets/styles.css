@@ -88,14 +88,7 @@ nav ul li a .logo,
     /* Smooth transition for scaling */
 }
 
-.nav_elt_tech * {
 
-    font-weight: bolder;
-    color: rgb(255, 2, 70);
-    text-shadow: 2px 2px 4px rgb(27, 1, 17);
-    transition: transform 0.3s ease;
-    /* Smooth transition for scaling */
-}
 
 .nav_elt :hover {
     transform: scale(1.1);
@@ -103,11 +96,7 @@ nav ul li a .logo,
     /* Scale up on hover */
 }
 
-.nav_elt_tech:hover {
-    transform: scale(1.1);
-    text-shadow: 0 4px 8px rgb(185, 21, 163);
-    /* Scale up on hover */
-}
+
 
 .burger-menu {
     display: none;
